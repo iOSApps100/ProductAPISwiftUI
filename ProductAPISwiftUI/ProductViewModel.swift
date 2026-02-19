@@ -6,17 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+import Combine
 
-class ProductViewModel {
-    
-    var products: [Product] = []
+class ProductViewModel: ObservableObject {
+    @Published var products: [Product] = []
     private let manager = APIManager()
     
     func fetchProducts() async {
         
         do {
-            let responseProducts: [Product] = try await manager.request(url: "https://fakestoreapi.com/products")
-            print(responseProducts)
+            products = try await manager.request(url: "https://fakestoreapi.com/products")
+            print(products)
         } catch {
             
         }
