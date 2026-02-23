@@ -11,11 +11,11 @@ enum Environment {
     
     static var baseURL: String {
         
-        guard let url = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as? String else {
-            fatalError("BaseURL not set in Info.plist")
-           
-        }
-        return url
+        #if DEV
+        return "https://dev.api.com"
+        #else
+        return "https://prod.api.com"
+        #endif
     }
     
     static var appName: String {
