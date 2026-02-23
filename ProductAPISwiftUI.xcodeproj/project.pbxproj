@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C624BC842F4C382800D5C5E1 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C624BC832F4C382800D5C5E1 /* Dev.xcconfig */; };
-		C624BC862F4C38B600D5C5E1 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C624BC852F4C38B600D5C5E1 /* Prod.xcconfig */; };
-		C624BC882F4C39C600D5C5E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C624BC872F4C39C600D5C5E1 /* Info.plist */; };
 		C624BC8A2F4C3AD300D5C5E1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624BC892F4C3AC100D5C5E1 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
@@ -124,9 +121,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C624BC882F4C39C600D5C5E1 /* Info.plist in Resources */,
-				C624BC842F4C382800D5C5E1 /* Dev.xcconfig in Resources */,
-				C624BC862F4C38B600D5C5E1 /* Prod.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +140,6 @@
 /* Begin XCBuildConfiguration section */
 		C624BC682F4595F700D5C5E1 /* Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C624BC832F4C382800D5C5E1 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -211,7 +204,6 @@
 		};
 		C624BC692F4595F700D5C5E1 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C624BC852F4C38B600D5C5E1 /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -278,7 +270,7 @@
 				DEVELOPMENT_TEAM = 7LNUKLD5QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = ProductAPISwiftUI/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -312,7 +304,7 @@
 				DEVELOPMENT_TEAM = 7LNUKLD5QF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = ProductAPISwiftUI/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
