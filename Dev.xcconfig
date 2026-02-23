@@ -1,0 +1,12 @@
+//
+//  Dev.xcconfig
+//  ProductAPISwiftUI
+//
+//  Created by Vikram Kumar on 23/02/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+BASE_URL =
+APP_NAME = DEV_ProductAPI

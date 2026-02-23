@@ -16,6 +16,8 @@ class ProductViewModel: ObservableObject {
     func fetchProducts() async {
         
         do {
+            print("Current Base URL: \(Environment.baseURL)")
+            print("Current Base URL: \(Environment.appName)")
             products = try await manager.request(url: "https://fakestoreapi.com/products")
             print(products)
         } catch {
